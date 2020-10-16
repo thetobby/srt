@@ -10665,7 +10665,7 @@ int CUDT::checkNAKTimer(const steady_clock::time_point& currtime)
         if (currtime <= m_tsNextNAKTime)
             return BECAUSE_NO_REASON; // wait for next NAK time
 
-        sendCtrl(UMSG_LOSSREPORT);
+        //sendCtrl(UMSG_LOSSREPORT); //periodic retransmissions
         debug_decision = BECAUSE_NAKREPORT;
     }
 
