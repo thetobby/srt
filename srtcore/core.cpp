@@ -8461,9 +8461,9 @@ void CUDT::processCtrl(const CPacket &ctrlpkt)
         rtt = m_ACKWindow.acknowledge(ctrlpkt.getAckSeqNo(), ack);
         if (rtt <= 0)
         {
-            LOGC(inlog.Error,
+            /*LOGC(inlog.Error,
                  log << CONID() << "IPE: ACK node overwritten when acknowledging " << ctrlpkt.getAckSeqNo()
-                     << " (ack extracted: " << ack << ")");
+                     << " (ack extracted: " << ack << ")");*/
             break;
         }
 
