@@ -24,6 +24,7 @@
 #include <pthread.h>
 #endif
 #include "utilities.h"
+#include <limits>
 
 class CUDTException;    // defined in common.h
 
